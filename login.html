@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Entregable2+Serrano/css/login.css">
+</head>
+<body>
+    <script src="./Entregable2+Serrano/js/login.js"></script>
+</body>
+</html>
+<section class="container">
+    <div class="login"> 
+        <h2>Log in</h2>
+        <form method="post" action="#">
+            <p><input type="text" name="login" value="" placeholder="username" id="user" title="Recuerda que el sistema reconoce Minúsculas y Mayúsculas" required></p>
+            <p><input type="password" name="password" value="" placeholder="password" id="pass" required></p>
+            <p class="remember_me">
+                <label>
+                    <input type="checkbox" name="checkbox" id="remember_me">
+                    Recordar esta computadora.
+                </label>
+            </p>
+            <p class="submit">
+                <input type="submit" name="commit" value="Login" id="btnSubmit">
+            </p>
+        </form>
+    </div>
+    <div class="login-help">
+        <p>Olvidaste tu contraseña? <a href="./Entregable2+Serrano/index.html">Click para reiniciar.</a> </p>
+    </div>
+</section>
+<section class="container-users hidden">
+    <a href=""><button id="return_page" class="btn btn-warning">Volver</button></a>
+        <div id="datos" class="panel-heading">
+        <h3>Bienvenido de nuevo <strong id="user-logged"></strong>.</h3>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li id="data_username" class="list-group-item disabled" title="You don't have permisions to change your username."><strong>Username: </strong></li>
+                    <li id="data_name" class="list-group-item"><label>Name:</label></li>
+                    <li id="data_password" class="list-group-item"><label>Password:<span>******</span> </label></li>
+                    <li id="data_email" class="list-group-item" title="You can't change your email address"><label>email: </label></li>
+                    <li id="data_phone" class="list-group-item"><label>Phone: </label></li>
+                    <li id="data_address" class="list-group-item"><h4 class="list-group-item-heading"><strong>Address:</strong></h4><button id="btnAddNew" class="btn-group btn-group-xs btn-warning">add new address</button><button id="btnDelete" class="btn-group btn-group-xs btn-danger">delete address</button>
+                        <p><select name="set-address" id="set-address" class="list-group-item-text" size="9">
+                            <option value=""> Example Address for this exercise. (first-address)</option>
+                            <option value=""> Example Address for this exercise. (second-address)</option>
+                            <option value=""> Example Address for this exercise. (third-address)</option>
+                            <option value=""> Example Address for this exercise. (fourth-address)</option>
+                            <option value=""> Example Address for this exercise. (fifth-address)</option>
+                            <option value=""> Example Address for this exercise. (sixth-address)</option>
+                            <option value=""> Example Address for this exercise. (seventh-address)</option>
+                            <option value=""> Example Address for this exercise. (eighth-address)</option>
+                            <option value=""> Example Address for this exercise. (ninth-address)</option>
+                            <option value=""> Example Address for this exercise. (tenth-address)</option>
+                            <option value=""> Example Address for this exercise. (eleventh-address)</option>
+                            <option value=""> Example Address for this exercise. (twelfth-address)</option>
+                            <option value=""> Example Address for this exercise. (thirteenth-address)</option>
+                        </select></p></li>
+                </ul>
+            </div>
+        </div>
+    <div id="alert" class="alert alert-warning" role="alert"> <strong>¡Cuidado!</strong> recuerda guardar cualquier dato que modifiques.</div>
+</section>

@@ -1,0 +1,6 @@
+ // Contenido del archivo users.json//
+  const users = [
+    { "username": "Pablo", "password": "12345" },
+    { "username": "jane.smith", "password": "secret" }
+  ];
+  // Convertir users a JSON y guardarlo en un archivo
